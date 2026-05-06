@@ -1,0 +1,24 @@
+npm init -y  //project innitialization
+npm i express dotenv  //dependencies
+npm i --save -dev nodemon  //install nodemon to track project updates
+
+npm i mogoose //enable connection to mongoose 
+
+
+
+//aunthetication errors refer to fault in user name and password
+
+
+when connecting app to mongoose database, after createing the app, create the project in mongoose, create cluster, connect drivers
+then create variables in the .env file (the connection string and the port, in the .env file)
+
+STEP2
+creating the schemas in the modules (where we define our data, of how the files are supposed to be arranged. How the data will be in a collection)
+
+STEP3 - CONTROLLERS
+Creating the functions that register a user and login a user, also create route for register and loging in.
+npm i bcryptjs (used for encrypting passwords)
+npm i jsonwebtoken
+
+create a token to create a user
+Have to create a secret, and if someone has access to your secret, they can have access to the token you produce

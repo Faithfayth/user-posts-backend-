@@ -22,3 +22,6 @@ npm i jsonwebtoken
 
 create a token to create a user
 Have to create a secret, and if someone has access to your secret, they can have access to the token you produce
+
+STEP3 - ROUTES
+Creating routes for login and registration

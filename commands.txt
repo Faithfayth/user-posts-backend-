@@ -31,3 +31,4 @@ Creating routes for login and registration
 
 
 Model > Controller > Routes > index.js
+can have a middleware to run right before every request, also during aunthetication and authorization.

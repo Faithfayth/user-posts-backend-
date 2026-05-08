@@ -1,6 +1,6 @@
 const express = require('express');
 
-const { createPost, getPosts } = require('../controllers/post');
+const { createPost, getPosts, updatePost } = require('../controllers/post');
 
 const auth = require('../middlewares/auth'); //importing the auth middleware to protect the routes that require authentication
 
@@ -10,6 +10,7 @@ router.post('/', auth, createPost); //route to create a new post, which will cal
 
 router.get('/', getPosts); //route to fetch all posts, which will call the getPosts function in the post controller when a GET request is made to /
 
+router.put('/:id', auth, updatePost); //route to update a post, which will call the updatePost function in the post controller when a PUT request is made to /:id, where :id is the id of the post to be updated. This route is protected by the auth middleware, which means that only authenticated users can access it.
 
 
 module.exports = router; //exporting the router to be used in other parts of the application

@@ -25,3 +25,9 @@ Have to create a secret, and if someone has access to your secret, they can have
 
 STEP3 - ROUTES
 Creating routes for login and registration
+
+
+
+
+
+Model > Controller > Routes > index.js
